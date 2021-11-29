@@ -4,48 +4,48 @@ body {
   color: #333;
   font-family: Lato, sans-serif;
 }
-.aaa {
+.header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.aaa img {
+.header__img {
   width: 100%;
 }
-.aaa .more_inf {
+.header__more {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-  .aaa {
+  .header {
     text-align: center;
   }
 }
-.centered-main-page-element {
+.main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
-.task {
+.main__task {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
-.task-row-wrapper {
+.newtask__wrapper {
   display: flex;
 }
-ul {
+.main__list {
   margin:0;
   padding: 0px;
 }
-li, h3 {
+.main__item, .main__title {
   list-style:none;
 }
-input,button{
+.main__input, .main__button{
   outline:none;
 }
-button {
+.main__button {
   background: none;
   border: 0px;
   color: #888;
@@ -54,12 +54,11 @@ button {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-button:hover {
+.main__button:hover {
   color: #3a3a3a;
 }
 /* Heading */
-h3,
-label[for="new-task"] {
+.main__title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -68,7 +67,7 @@ label[for="new-task"] {
   margin: 0;
   text-transform: uppercase;
 }
-input[type="text"] {
+.main__input--text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -80,21 +79,21 @@ input[type="text"] {
   font-family: Lato, sans-serif;
   color: #888;
 }
-input[type="text"]:focus {
+.main__input--text:focus {
   color: #333;
 }
 
 /* New Task */
-label[for="new-task"] {
+.newtask__title {
   display: block;
   margin: 0 0 20px;
 }
-input#new-task {
+.newtask__input {
   width: 318px;
 }
 
 /* Task list */
-li {
+.main__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -103,47 +102,47 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-li > * {
+.main__item > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.main__item > .main__input--checkbox {
   margin: 0 10px;
 }
-li > label {
+.main__item > .main__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-li > input[type="text"] {
+.main__item > .main__input--text {
   width: 226px
 }
-button.delete img {
+.main__button--delete .main__button__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-button.delete img:hover {
+.main__button--delete .main__button__img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-ul#completed-tasks label {
+.main__incompletedtasks .main__label {
   text-decoration: line-through
   color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.main__item .main__input--text {
   display:none
 }
 
-ul li.editmode input[type=text] {
+.main__item--editmode .main__input--text {
   display:inline-block;
   width:224px
 }
 
-ul li.editmode label {
+.main__item--editmode .main__label {
   display:none;
 }
