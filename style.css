@@ -32,7 +32,7 @@ body {
   display: inline-block;
   flex-grow: 1
 }
-.newtask__wrapper {
+.new-task__wrapper {
   display: flex;
 }
 .main__list {
@@ -84,11 +84,11 @@ body {
 }
 
 /* New Task */
-.newtask__title {
+.new-task__title {
   display: block;
   margin: 0 0 20px;
 }
-.newtask__input {
+.new-task__input {
   width: 318px;
 }
 
@@ -128,7 +128,7 @@ body {
 }
 
 /* Completed */
-.main__incompletedtasks .main__label {
+.main__incompleted-tasks .main__label {
   text-decoration: line-through
   color: #888;
 }
