@@ -41,10 +41,12 @@
   margin: 0;
   padding: 0px;
 }
-.item-reset, .title-reset {
+.item-reset,
+.title-reset {
   list-style: none;
 }
-.input-reset,.button-reset{
+.input-reset,
+.button-reset{
   outline: none;
 }
 .button {
@@ -100,7 +102,6 @@
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -118,7 +119,7 @@
   font-size: 18px;
   width: 226px;
 }
-.item >    .task {
+.item > .task {
   width: 226px;
 }
 .button.delete .img {
