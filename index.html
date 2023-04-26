@@ -6,49 +6,55 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
   <body class="page">
-    <div class="header">
+    <header class="header">
       <img class="img" src="./eisenhower-matrix.jpg">
       <a class="link-more"
           href="https://goal-life.com/page/method/matrix-eisenhower">
           Want more details?
       </a>
-    </div>
-    <div class="main">
-      <p>
-        <label for="new-task" class="label new-task-label">Add Item</label>
-        <div class="task-row-wrapper">
-          <input class="input-reset" id="new-task"class="task" type="text">
-          <button class="button-reset button">Add</button>
-        </div>
-      </p>
-      <h3 class="title-reset title">Todo</h3>
-      <ul class="list-reset list" id="incomplete-tasks">
-        <li class="item-reset item">
-          <input class="input-reset checkbox" type="checkbox">
-          <label class="label task">Pay Bills</label>
-          <input type="text" class="input-reset task">
-          <button class="button-reset button edit">Edit</button>
-          <button class="button-reset button delete"><img class="img" src="./remove.svg"></button>
-        </li>
-        <li class="item-reset item edit-mode">
-          <input class="input-reset checkbox" type="checkbox">
-          <label class="label task">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="input-reset task">
-          <button class="button-reset button edit">Save</button>
-          <button class="button-reset button delete"><img class="img" src="./remove.svg"></button>
-        </li>
-      </ul>
-      <h3 class="title-reset title">Completed</h3>
-      <ul class="list-reset list" id="completed-tasks">
-        <li class="item-reset item">
-          <input class="input-reset checkbox" type="checkbox" checked>
-          <label class="label task">See the Doctor</label>
-          <input type="text" class="input-reset task">
-          <button class="button-reset button edit">Edit</button>
-          <button class="button-reset button delete"><img class="img" src="./remove.svg"></button>
-        </li>
-      </ul>
-    </div>
+    </header>
+    <main class="main">
+      <section>
+        <p>
+          <label for="new-task" class="label new-task-label">Add Item</label>
+          <div class="task-row-wrapper">
+            <input class="input-reset" id="new-task"class="task" type="text">
+            <button class="button-reset button">Add</button>
+          </div>
+        </p>
+      </section>
+      <section>
+        <h3 class="title-reset title">Todo</h3>
+        <ul class="list-reset list" id="incomplete-tasks">
+          <li class="item-reset item">
+            <input class="input-reset checkbox" type="checkbox">
+            <label class="label task">Pay Bills</label>
+            <input type="text" class="input-reset task">
+            <button class="button-reset button edit">Edit</button>
+            <button class="button-reset button delete"><img class="img" src="./remove.svg"></button>
+          </li>
+          <li class="item-reset item edit-mode">
+            <input class="input-reset checkbox" type="checkbox">
+            <label class="label task">Go Shopping</label>
+            <input type="text" value="Go Shopping" class="input-reset task">
+            <button class="button-reset button edit">Save</button>
+            <button class="button-reset button delete"><img class="img" src="./remove.svg"></button>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h3 class="title-reset title">Completed</h3>
+        <ul class="list-reset list" id="completed-tasks">
+          <li class="item-reset item">
+            <input class="input-reset checkbox" type="checkbox" checked>
+            <label class="label task">See the Doctor</label>
+            <input type="text" class="input-reset task">
+            <button class="button-reset button edit">Edit</button>
+            <button class="button-reset button delete"><img class="img" src="./remove.svg"></button>
+          </li>
+        </ul>
+      </section>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>
