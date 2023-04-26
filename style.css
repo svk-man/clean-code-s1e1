@@ -38,14 +38,14 @@
   display: flex;
 }
 .list-reset {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 .item-reset, .title-reset {
-  list-style:none;
+  list-style: none;
 }
 .input-reset,.button-reset{
-  outline:none;
+  outline: none;
 }
 .button {
   background: none;
@@ -138,14 +138,14 @@
 
 /* Edit Task */
 .list .item .task {
-  display:none
+  display: none
 }
 
 .list .item.edit-mode .task {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .list .item.edit-mode .label {
-  display:none;
+  display: none;
 }
