@@ -5,9 +5,9 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
-  <body>
+  <body class="page">
     <div class="header">
-      <img src="./eisenhower-matrix.jpg">
+      <img class="img" src="./eisenhower-matrix.jpg">
       <a class="link-more"
           href="https://goal-life.com/page/method/matrix-eisenhower">
           Want more details?
@@ -15,37 +15,37 @@
     </div>
     <div class="main">
       <p>
-        <label for="new-task">Add Item</label>
+        <label for="new-task" class="label new-task-label">Add Item</label>
         <div class="task-row-wrapper">
-          <input id="new-task"class="task" type="text">
-          <button>Add</button>
+          <input class="input-reset" id="new-task"class="task" type="text">
+          <button class="button-reset button">Add</button>
         </div>
       </p>
-      <h3>Todo</h3>
-      <ul id="incomplete-tasks">
-        <li>
-          <input type="checkbox">
-          <label class="task">Pay Bills</label>
-          <input type="text" class="task">
-          <button class="edit">Edit</button>
-          <button class="delete"><img src="./remove.svg"></button>
+      <h3 class="title-reset title">Todo</h3>
+      <ul class="list-reset list" id="incomplete-tasks">
+        <li class="item-reset item">
+          <input class="input-reset checkbox" type="checkbox">
+          <label class="label task">Pay Bills</label>
+          <input type="text" class="input-reset task">
+          <button class="button-reset button edit">Edit</button>
+          <button class="button-reset button delete"><img class="img" src="./remove.svg"></button>
         </li>
-        <li class="edit-mode">
-          <input type="checkbox">
-          <label class="task">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="task">
-          <button class="edit">Save</button>
-          <button class="delete"><img src="./remove.svg"></button>
+        <li class="item-reset item edit-mode">
+          <input class="input-reset checkbox" type="checkbox">
+          <label class="label task">Go Shopping</label>
+          <input type="text" value="Go Shopping" class="input-reset task">
+          <button class="button-reset button edit">Save</button>
+          <button class="button-reset button delete"><img class="img" src="./remove.svg"></button>
         </li>
       </ul>
-      <h3>Completed</h3>
-      <ul id="completed-tasks">
-        <li>
-          <input type="checkbox" checked>
-          <label class="task">See the Doctor</label>
-          <input type="text" class="task">
-          <button class="edit">Edit</button>
-          <button class="delete"><img src="./remove.svg"></button>
+      <h3 class="title-reset title">Completed</h3>
+      <ul class="list-reset list" id="completed-tasks">
+        <li class="item-reset item">
+          <input class="input-reset checkbox" type="checkbox" checked>
+          <label class="label task">See the Doctor</label>
+          <input type="text" class="input-reset task">
+          <button class="button-reset button edit">Edit</button>
+          <button class="button-reset button delete"><img class="img" src="./remove.svg"></button>
         </li>
       </ul>
     </div>
